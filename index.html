@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.introbody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    font-family: sans-serif;
+    z-index: 900;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.intro-container {
+    min-height: 100VH;
+    width: 100%;
+    position: relative;
+    background: #0f222f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 901;
+    flex-wrap: wrap;
+}
+
+.intro-container::before {
+    content: '';
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    background: linear-gradient(#08ffee, #fcd200);
+    transform: translate(-190px, -250px);
+    z-index: 902;
+}
+
+.intro-container::after {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#fcd200, #fc002e);
+    transform: translate(190px, 100px);
+    z-index: 903;
+}
+
+.intro-container .ball-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #04bb04;
+    transform: translate(-250px, 200px);
+    position: absolute;
+    z-index: 904;
+}
+
+.intro-container .ball-2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #08e2ff;
+    transform: translate(-10px, -220px);
+    position: absolute;
+    z-index: 905;
+}
+
+.intro-container .ball-3 {
+    display: none;
+}
+
+.intro-container .intro-box {
+    min-height: 70vh;
+    width: 75%;
+    padding: 0, 20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 910;
+    margin-top: 50PX;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    /*important!!*/
+    box-shadow: 15px 17px 17px rgba(10, 10, 10, 0.25);
+}
+
+.intro-container .intro-box .header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 910;
+    background: #045F31;
+}
+
+.intro-container .intro-box .logo {
+    position: relative;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.intro-container .intro-box .logo span {
+    color: #ca8a04;
+}
+
+.intro-container .intro-box ul {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+.intro-container .intro-box ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+
+.intro-container .intro-box ul li a:hover {
+    border-top-color: #ca8a04;
+    border-bottom-color: #ca8a04;
+    color: #ffffff;
+}
+
+
+
+/* H1*/
+.intro-container .intro-box #home {
+    margin-top: 120PX;
+}
+
+
+.intro-container .intro-box #home h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    line-height: 50px;
+    margin-left: 40px;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+    line-height: 50px;
+}
+
+.intro-container .intro-box #home h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.intro-container .intro-box #home h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.intro-container .intro-box #home h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+}
+
+.intro-container .intro-box #home h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(255, 251, 6);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+}
+
+.intro-container .intro-box #home h1:nth-child(1) span {
+    animation-delay: 0.5s;
+}
+
+.intro-container .intro-box #home h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+.intro-container .intro-box #home h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+.intro-container .intro-box .cta {
+    display: inline-block;
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 2px solid rgb(123, 235, 255);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    margin-left: 40px;
+    width: 75%;
+    text-decoration: none;
+    margin-bottom: 10%;
+    transition-property: background-color, color;
+}
+
+.intro-container .intro-box .cta:hover {
+    color: white;
+    background-color: rgb(123, 251, 255);
+}
+
+.intro-container .intro-box .section1 h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.intro-container .intro-box .section1 h1 span {
+    color: rgb(87, 249, 255);
+}
+
+.intro-container .intro-box .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes text_reveal {
+    100% {
+        color: #fffc2d;
+    }
+
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: rgb(0, 255, 200);
+        font-weight: 500;
+    }
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+.intro-container .intro-box .section2 {
+    display: none;
+    width: 500px;
+    height: auto;
+    transform: translateX(380px);
+    position: absolute;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    top: 100px;
+}
+
+.intro-container .intro-box .section2 img {
+    width: 400px;
+    height: auto;
+    justify-content: center;
+}
+.intro-box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* New Page*/
+.am {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.ambody {
+    overflow: hidden;
+    position: relative;
+}
+.am-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f222f;
+}
+.am-container::after {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-right: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    transform: translate(490px, 170px);
+    z-index: 1;
+    display: none;
+}
+.am-box {
+    position: relative;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: -100px;
+    overflow: hidden;
+    z-index: 10;
+    bottom: -45px;
+}
+/* .res {
+    right: 10%;
+    left: 10%;
+    position: absolute;
+    z-index: 15;
+    bottom: 5%;
+    height: 30px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    background: #009ba0;
+    cursor: pointer;
+    opacity: 0.5;
+    align-content: center;
+    backdrop-filter: blur(10px);
+}
+.res:hover {
+    opacity: 0.7;
+    box-shadow: 10px #00eeff;
+    background: linear-gradient(90deg, #ff0, #db01c9, #ff0);
+}
+.resume {
+    color: #eeff00;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 35%;
+} */
+.am-box::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 700px;
+    background: linear-gradient(#e6ff01, #d400d4);
+    animation: animate 4s linear infinite;
+}
+.am-box::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #0f222f;
+    border-radius: 16px;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.am-box .head h2 {
+    position: absolute;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    z-index: 50;
+    top: 80px;
+    left: 120px;
+    margin-left: 10px;
+}
+.am-box img {
+    display: none;
+    position: absolute;
+    z-index: 12;
+    width: 400px;
+    height: auto;
+    margin-right: 550px;
+
+}
+.am-box p {
+    color: #feffaf;
+    font-size: 12.5px;
+    z-index: 12;
+    align-self: baseline;
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 30px;
+    position: absolute;
+    justify-content: center;
+    line-height: normal;
+}
+/*skills*/
+.skpage {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.skbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #0f222f;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+.heads1 {
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    left: 50%;
+    position: absolute;
+    z-index: 3;
+    min-height: 50vh;
+    font-family: 'Poppins', sans-serif;
+}
+#h2s {
+    position: relative;
+    top: 0;
+    left: 10px;
+    margin-right: 60%;
+    margin-top: 5%;
+    font-size: 80px;
+    color: #222;
+    z-index: 33;
+    background-color: transparent;
+    background: linear-gradient(90deg, #0F0, #1899ff, #f0f, #f08, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.02em transparent;
+}
+#h2s::before {
+    content: attr(data-texts);
+    position: absolute;
+    left: 0;
+    color: #222;
+    background: linear-gradient(90deg, #090, #1899ff, #f0f,
+            #F00, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.02em transparent;
+    transform: translate(-10px, -10px);
+    z-index: 31;
+    opacity: 0.25;
+}
+#h2s::after {
+    content: attr(data-texts);
+    position: absolute;
+    left: 0;
+    color: #222;
+    background: linear-gradient(90deg, #0f0, #1899ff, #f0f, #F00, #ff0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.02em transparent;
+    transform: translate(-20px, -20px);
+    z-index: 32;
+    opacity: 0.1;
+}
+.sect {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+.sect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(20% at right 70%);
+    z-index: 2;
+}
+.sect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+    z-index: 1;
+}
+.sk-container {
+    position: relative;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    height: auto;
+    bottom: -100px;
+}
+.sk-container .sk-cards {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.sk-container .sk-cards .sk-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+    z-index: 10;
+}
+.sk-container .sk-cards:hover .sk-content {
+    opacity: 2;
+    transform: translateY(-20px);
+}
+.sk-container .sk-cards .sk-content .sk-imBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 11;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+.sk-container .sk-cards .sk-content .sk-imBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    object-fit: cover;
+}
+.sk-container .sk-cards .sci{
+    position: absolute;
+    bottom: 55px;
+    display: flex;
+}
+.sk-container .sk-cards .sci li{
+    list-style: none;
+    margin: 0 8px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.sk-container .sk-cards .sci li i .cen{
+    bottom: 60px;
+}
+.sk-container .sk-cards .sci li i{
+    color: white;
+    font-size: 20px;
+}
+.sk-container .sk-cards .sci li img{
+    width: 25px;
+    height: auto;
+}
+.sk-container .sk-cards:hover .sci li{
+    transform: translateY(0px);
+    opacity: 0.7;
+}
+.sk-container .sk-cards .sk-content .contentbx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    z-index: 13;
+    line-height: 1.1em;
+}
+.sk-container .sk-cards .sk-content .contentbx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    z-index: 14;
+    text-transform: initial;
+}
+/*projects*/
+.propage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.probody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f222f;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+.prohead {
+    color: #fff;
+    -webkit-text-stroke: #000;
+    font-size: 50px;
+    text-decoration-line: underline;
+    align-self: first baseline;
+    margin-top: 70px;
+    position: absolute;
+    letter-spacing: 10px;
+}
+.probody:has(.probox[data-color="clr1"]:hover) {
+    background: #01695f;
+}
+.probody:has(.probox[data-color="clr2"]:hover) {
+    background: #ffc7f3;
+}
+.probody:has(.probox[data-color="clr3"]:hover) {
+    background: #757e00;
+}
+.probody:has(.probox[data-color="clr4"]:hover) {
+    background: #015722;
+}
+.probody:has(.probox[data-color="clr5"]:hover) {
+    background: #1d080c;
+}
+.probody:has(.probox[data-color="clr6"]:hover) {
+    background: #030633;
+}
+.probody:has(.probox[data-color="clr7"]:hover) {
+    background: #181a19;
+}
+.probody:has(.probox[data-color="clr8"]:hover) {
+    background: #4b1515;
+}
+.procontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 140px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+.procontainer .probox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.procontainer .probox .proimbx {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+}
+.procontainer .probox .proimbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.procontainer .probox:hover .proimbx img {
+    opacity: 0.5;
+}
+.procontainer .probox .proglass {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    scale: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.procontainer .probox .proglass::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.06);
+}
+.procontainer .probox:hover {
+    transform: rotate(-15deg);
+}
+.procontainer .probox:hover .proglass {
+    scale: 1;
+    opacity: 1;
+    transform: rotate(20deg);
+}
+.procontainer .probox .proglass h3 {
+    font-size: 1.25em;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 0.8em;
+}
+.procontainer .probox .proglass h3 span {
+    font-weight: 400;
+    font-size: 0.5em;
+}
+.procontainer .probox ul {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.procontainer .probox ul li {
+    list-style: none;
+}
+.procontainer .probox ul a {
+    color: #fff;
+    font-size: 1em;
+    scale: 0;
+    text-decoration: none;
+    transition: 0.25s;
+    align-content: bottom;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+.procontainer .probox:hover ul a {
+    scale: 1;
+}
+.procontainer .probox ul a:hover {
+    color: #fff;
+    opacity: 1;
+}
+/*Contact*/
+.conpage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.conbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0f222f;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+.h1 {
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+    font-weight: 800;
+    z-index: 10;
+    margin-left: 10%;
+    color: #fff;
+    font-size: 40px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.h1:before {
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #0f222f 5%, #0f222f 100%);
+    animation: animated 5.5s linear forwards infinite;
+}
+@keyframes animated {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        left: -130%
+    }
+}
+.h1 .span1 {
+    color: aqua;
+}
+.con-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-wrap: wrap;
+    margin-top: 50%;
+    min-height: 100vh;
+    margin-bottom: 10px;
+}
+.con-container .glass {
+    position: relative;
+    width: 200px;
+    height: 240px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    z-index: 13;
+    transform: rotate(calc(var(--r) * 1deg));
+}
+.con-container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.con-container .glass i {
+    color: #fff;
+    font-size: 35px;
+    z-index: 5;
+}
+.con-container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 20px;
+    z-index: 6;
+    margin-top: 15%;
+}
+.hiver {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    z-index: 7;
+}
+.con-container .glass i:hover+.hiver {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    font-size: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8;
+}
+/*LOGIN FORM*/
+.loginpage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.loginbody {
+    width: 100%;
+    min-height: 100vh;
+    background: #0f222f;
+    overflow: hidden;
+    position: relative;
+}
+.loginsect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.loginsect img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    margin-bottom: 50px;
+}
+/* .loginbox {
+    position: relative;
+} */
+.loginbox img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    left: -100px;
+    top: -240px;
+}
+.logincontain {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.loginform {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.loginform h2 {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.loginform h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+}
+.loginform .inputbox {
+    width: 100%;
+    margin-top: 20px;
+}
+.loginform .inputbox input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.loginform .inputbox input::placeholder {
+    color: #fff;
+}
+.loginform .inputbox input[type="submit"] {
+    background: #fff;
+    color: #666;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+/*navbar*/
+.navpage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+.navbody {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    z-index: 900;
+    top: 0;
+    box-shadow: 10px;
+}
+.navbody .tabs {
+    position: fixed;
+    z-index: 901;
+    top: 0px;
+    right: 0;
+    width: 100%;
+}
+.navbody .tabs input {
+    visibility: hidden;
+    display: none;
+    z-index: 902;
+    margin-left: 10px;
+}
+.navbody .buttons {
+    position: sticky;
+    display: flex;
+    gap: -5px;
+    padding-top: 30px;
+    padding-left: 105px;
+    padding-bottom: 30px;
+    padding-right: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    z-index: 902;
+}
+.navbody .buttons label {
+    width: 20%;
+    font-size: 1.5em;
+    -webkit-text-stroke: 3px #fff;
+    color: transparent;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 903;
+}
+.navbody .buttons label a {
+    color: #fff;
+    -webkit-text-stroke: 3px #fff;
+    color: transparent;
+}
+.navbody .buttons label:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+.tabs input:nth-child(1):checked~.buttons label:nth-child(1),
+.tabs input:nth-child(2):checked~.buttons label:nth-child(2),
+.tabs input:nth-child(3):checked~.buttons label:nth-child(3),
+.tabs input:nth-child(4):checked~.buttons label:nth-child(4),
+.tabs input:nth-child(5):checked~.buttons label:nth-child(5),
+.tabs input:nth-child(6):checked~.buttons label:nth-child(6) {
+    color: #fff;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+/*Navbar*/
+.navpage {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+}
+.navbody {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    z-index: 100;
+    box-shadow: 10px;
+}
+.navbody .tabs {
+    position: fixed;
+    z-index: 120;
+    width: 100%;
+}
+.icons {
+    z-index: 1500;
+    font-size: 2.8rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    right: 30px;
+    top: 40px;
+    position: fixed;
+}
+/* mobile navbar */
+@media only screen and (max-width:768px) {
+    .cross {
+        font-size: 2.8rem;
+        color: #ffffff;
+        cursor: pointer;
+        right: -100%;
+        display: flex;
+        top: 40px;
+        position: fixed;
+        z-index: 3000;
+    }
+    .icons {
+        z-index: 3500;
+        font-size: 2.8rem;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        right: 30px;
+        top: 40px;
+        position: fixed;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    .nav {
+        position: absolute;
+        z-index: 2000;
+    }
+
+    .nav ul {
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        font-size: medium;
+        right: -100%;
+        padding: 100px;
+        top: 0px;
+        background: #0f222f;
+        text-align: center;
+        transition: all .7s;
+    }
+
+    .nav ul li {
+        display: block;
+        margin-top: 20%;
+        letter-spacing: 5px;
+    }
+
+    .nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: 2px solid transparent;
+        padding: 15px;
+    }
+
+    .nav ul li a:hover {
+        border-top-color: #ca8a04;
+        border-bottom-color: #ca8a04;
+    }
+
+    #check:checked~ul {
+        right: 0%;
+
+    }
+
+    
+
+    #uncheck {
+        display: none;
+    }
+
+    .uncheckbox {
+        display: none;
+    }
+/*
+    #uncheck:checked~ul {
+        right: -100%;
+    }
+
+    #check:checked~.cross {
+        right: 30px;
+        transition: all .7s;
+    }*/
+}
+@media only screen and (min-width:768px){
+    .nav{
+        display: none;
+    }
+}
+@media only screen and (max-width:350px){
+    .nav ul li {
+        margin-top: 40px;
+    }
+    .nav ul{
+        margin-right: 0%;
+    }
+}
+/* responsiveness */
+@media only screen and (max-width:340px) {
+    .intro-container {
+        min-height: 100vh;
+    }
+
+    .intro-container .intro-box {
+        flex-basis: auto;
+        width: 90%;
+        min-height: 70vh;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .res {
+        bottom: 15px;
+        height: 30px;
+    }
+
+    .am-box .head h2 {
+        margin-left: -30px;
+        margin-right: -100px;
+        top: 20%
+    }
+
+    .am-box p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 12px;
+        top: -9%;
+    }
+
+    .sect .heads1 #h2s {
+        font-size: 4rem;
+        align-self: first baseline;
+        left: -2%;
+    }
+
+    .prohead {
+        font-size: 40px;
+    }
+
+    .h1 {
+        font-size: 33px;
+        left: -5%;
+    }
+
+    .con-container {
+        margin-top: 80%;
+    }
+    .logincontain{
+        width: 250px;
+    }
+    /* .inputbox{
+        width: 230px;
+    } */
+}
+
+@media only screen and (min-width:600px) {
+    .intro-container {
+        min-height: 100vh;
+    }
+
+    .res {
+        bottom: 10%;
+        width: 35%;
+        left: 5%;
+    }
+
+    .ambody {
+        min-height: 100vh;
+    }
+
+    .am-box .head h2 {
+        margin-left: 10px;
+        font-size: 30px;
+        margin-left: 220px;
+    }
+
+    .ambody .am-box p {
+        font-size: 14px;
+        margin-left: 245px;
+        top: -5%;
+    }
+
+    .sect .heads1 #h2s {
+        font-size: 5rem;
+        align-self: first baseline;
+        left: -2%;
+    }
+
+    .sect::before {
+        background: linear-gradient(#f00, #f0f);
+        clip-path: circle(30% at right 70%);
+    }
+
+    .prohead {
+        font-size: 50px;
+    }
+
+    .h1 {
+        margin-top: 200px;
+        font-size: 50px;
+        margin-left: 90px;
+    }
+
+    .am-box::before {
+        width: 400px;
+        height: 700px;
+    }
+
+    .am-box img {
+        display: flex;
+        width: 250px;
+        height: auto;
+        margin-left: 30%;
+        top: -5%;
+        position: relative;
+        margin-right: 90%;
+
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .am-box p {
+        margin-left: 35px;
+        margin-right: 35px;
+        font-size: 16.5px;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .res {
+        bottom: 7%;
+        font-size: 19px;
+        border-radius: 35px;
+        width: 35%;
+        height: auto;
+        left: 5%;
+    }
+
+    .intro-container {
+        min-height: 100vh;
+    }
+
+    .intro-container::before {
+        left: 7%;
+        margin-top: 15%;
+    }
+
+    .intro-container::after {
+        right: 27%;
+        margin-bottom: -20%;
+    }
+
+    .intro-container .intro-box {
+        width: 85%;
+        margin-top: 2%;
+    }
+
+    .intro-container .intro-box .logo {
+        margin-left: -30px;
+    }
+
+    .intro-container .intro-box .section2 {
+        display: flex;
+        right: 30%;
+    }
+
+    .intro-container .intro-box .section2 img {
+        width: 300px;
+        height: auto;
+    }
+
+    .intro-container .intro-box .section1 {
+        margin-left: 15%;
+        width: 100%;
+    }
+
+    .intro-container .intro-box ul {
+        display: flex;
+        margin-right: -55px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .intro-container .intro-box ul li a {
+        padding: 0.1rem 0.24rem;
+        font-size: 1rem;
+    }
+
+    .am-box {
+        min-height: 70vh;
+        width: 90%;
+        margin-top: 6%;
+    }
+
+    .am-box .head h2 {
+        margin-left: 45%;
+        margin-right: 3%;
+        font-size: 40px;
+        top: 15%;
+    }
+
+    .ambody .am-box img {
+        display: flex;
+        width: 280px;
+        height: auto;
+        margin-left: 30%;
+        position: relative;
+        margin-right: 85%;
+
+    }
+
+    .am-container {
+        min-height: 100vh;
+    }
+
+    .ambody .am-box p {
+        margin-left: 45%;
+        margin-right: 3%;
+        font-size: 17px;
+        margin-top: 15.5%;
+    }
+
+    .sect .heads1 #h2s {
+        font-size: 5rem;
+        align-self: first baseline;
+        left: -2%;
+    }
+
+    .prohead {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+
+    .procontainer {
+        margin-top: 35%;
+    }
+
+    .h1 {
+        margin-top: 200px;
+        font-size: 50px;
+        margin-left: 25%;
+    }
+
+    .conbody {
+        min-height: 100vh;
+    }
+
+    .con-container {
+        margin-top: 40%;
+    }
+
+    .con-container:hover .glass {
+        margin-top: 10%;
+    }
+
+    .am-box::before {
+        width: 400px;
+        height: 1000px;
+    }
+
+    .loginbody {
+        min-height: 120vh;
+    }
+
+    .loginbox {
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+
+    .logincontain {
+        margin-top: -50%;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .navbody {
+        display: flex;
+    }
+
+    .navpage {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .icons {
+        display: none;
+    }
+
+    .skbody {
+        min-height: 120vh;
+    }
+
+    .intro-container {
+        height: 100vh;
+    }
+
+    .intro-container .intro-box {
+        margin-top: 2%;
+        width: 75%;
+        min-height: 80vh;
+    }
+
+    .intro-container::before {
+        margin-top: 20%;
+    }
+
+    .intro-container::after {
+        margin-bottom: -15%;
+        right: 20%;
+    }
+
+    .intro-container .intro-box .logo {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .intro-container .intro-box ul li a {
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+    }
+
+    .intro-container .intro-box .section1 {
+        margin-top: 8%;
+    }
+
+    .intro-container .intro-box .home-container .section2 {
+        margin-top: -10px;
+        margin-right: 5%;
+    }
+
+    .intro-container .intro-box #home h1 {
+        font-size: 2.5rem;
+        padding-top: 15px;
+        margin-left: 50px;
+        line-height: 50px;
+    }
+
+    .intro-container .intro-box .cta {
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+
+    .intro-container .ball-3 {
+        display: flex;
+    }
+
+    .intro-container .ball-2 {
+        display: flex;
+    }
+
+    .intro-container .intro-box .section2 img {
+        width: 350px;
+        height: auto;margin-top: 10%;
+    }
+
+    .am-container {
+        height: 120vh;
+        position: relative;
+    }
+
+    .am-box {
+        margin-top: -2%;
+        width: 90%;
+        height: 500px;
+    }
+
+    .am-box::before {
+        width: 400px;
+        height: 1500px;
+    }
+
+    .res {
+        left: 5%;
+        bottom: 7%;
+        width: 35%;
+    }
+
+    .ambody .am-box img {
+        display: flex;
+        width: 400px;
+        height: auto;
+        margin-left: 30%;
+        position: relative;
+        margin-right: 85%;
+        top: -6%;
+    }
+
+    .ambody .am-box p {
+        margin-left: 43%;
+        margin-right: 3%;
+        font-size: 23px;
+        margin-top: 15%;
+    }
+
+    .probody {
+        min-height: 100vh;
+    }
+
+    .procontainer {
+        margin-top: 20%;
+        min-height: 80vh;
+    }
+
+    .h1 {
+        margin-top: 23%;
+        margin-left: 30%;
+    }
+
+    .navbody {
+        display: flex;
+    }
+
+    .navbody .buttons {
+        display: flex;
+    }
+
+    .navbody .buttons label {
+        font-size: 1.5em;
+    }
+
+    .conbody {
+        min-height: 100vh;
+    }
+
+    .con-container {
+        margin-top: 25%;
+    }
+
+    .logincontain {
+        top: -20%;
+    }
+
+    .procontainer {
+        margin-top: 25%;
+    }
+
+    .navbody {
+        display: flex;
+    }
+
+    .navpage {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:300px) {
+
+    .am-box .head h2 {
+        margin-left: -30px;
+        margin-right: -100px;
+        top: 15%
+    }
+
+    .am-box p {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 10px;
+        top: -10%;
+    }
+
+    .res{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width:1400px) {
+    .intro-container .intro-box{
+        width: 1100px;
+    }
+    .am-box{
+        width: 1100px;
+    }
+    .h1{
+        text-align: center;
+        justify-content: center;
+        margin-left: 37.5%;
+    }
+    .con-container{
+        margin-top: 20%;
+    }
+    .con-container .hiver:hover{
+        margin-top: 20%;
+    }
+}
+    </style>
+    <!-- <link rel="stylesheet" href="../portfolio/css/mobile-navbar.css">
+    <link rel="stylesheet" href="../portfolio/css/port.css">
+    <link rel="stylesheet" href="../portfolio/css/responsiveness.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+       
+    <div class="intropage" id="intropage">
+
+        <div class="introbody" id="introbody">
+            <div class="intro-container">
+                <div class="ball-1"></div>
+                <div class="ball-2"></div>
+                <div class="ball-3"></div>
+                <div class="intro-box">
+                    <header class="header">
+                        <a href="#" class="logo">PORT<span>FOLIO</span></a>
+                        <nav id="main-nav" class="navbar">
+                                <div class="bar"></div>
+                            <ul>
+                                <li><a href="#introbody" class="active">Home</a></li>
+                                <li><a href="#am">About</a></li>
+                                <li><a href="#skpage">Skill</a></li>
+                                <li>
+                                    <a href="#propage">Projects</a>
+                                </li>
+                                <li><a href="#conpage">Contact</a></li>
+                            </ul>
+                        
+                        </nav>
+                    </header>
+                    <section id="home">
+                        <div class="home-container">
+                            <div class="section1">
+                                <h1>Hello, <span></span></h1>
+                                <h1>My Name is <span></span></h1>
+                                <h1>RIDA <span></span></h1>
+                                <a href="#propage" type="button" class="cta">Portfolio</a>
+                            </div>
+                            <div class="section2">
+                                <img src="../portfolio/images/pngtree.png"
+                                    class="profile">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-navbar -->
+        <div class="mob-nav">
+        <nav class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="icons"><i class='bx bx-menu'></i></label> 
+            <ul>
+                <li><a href="#introbody" class="active">Home</a></li>
+                <li><a href="#am">About</a></li>
+                <li><a href="#skpage">Skill</a></li>
+                <li>
+                    <a href="#propage">Projects</a>
+                </li>
+                <li><a href="#conpage">Contact</a></li>
+                <li><a href="https://ridashaikh102.github.io/Resume/#obj">Resume</a></li>
+            </ul>
+        </nav></div>
+        <!--Navbar-->
+        <div class="navpage">
+            <div class="navbody">
+                <div class="tabs">
+                    <input id="home" type="radio" name="tabsMenu">
+                    <input id="about" type="radio" name="tabsMenu">
+                    <input id="skills" type="radio" name="tabsMenu">
+                    <input id="projects" type="radio " name="tabsMenu">
+                    <input id="contact" type="radio" name="tabsMenu">
+                    <input id="login" type="radio" name="tabsMenu">
+                    <div class="buttons">
+
+                        <label for="home"><a href="#introbody"><i class="fa-solid fa-house"></i></label></a>
+                        <label for="about"><a href="#am"><i class="fa-solid fa-user"></i></label></a>
+                        <label for="skills"><a href="#skpage"><i class="fa-solid fa-thumbs-up"></i></label></a>
+                        <label for="projects"><a href="#propage"><i class="fa-solid fa-sheet-plastic"></i></label></a>
+                        <label for="contact"><a href="#conpage"><i class="fa-regular fa-id-badge"></i></label></a>
+                        <label for="login"><a href="#loginpage"><i class="fa-solid fa-right-to-bracket"></i></label></a>
+                        <!-- <div class="underline"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--New Section-->
+    <div class="am" id="am">
+        <div class="ambody">
+        <div class="am-container">
+            <div class="am-box">
+                <img src="../portfolio/images/Hijab-Dp-58.png" alt="profile">
+                <div class="head">
+                    <h2>ABOUT ME</h2>
+                </div>
+                <p>Hi! I,m Rida. I'm a front end developer and a Graphic Designer with little bit of experience in both.
+                    I want to
+                    work on a variety of projects for clients in the retail, travel, and healthcare industries. I'm
+                    passionate about creating great user experiences and have a strong understanding of usability and
+                    accessibility standards. I love to create a very unique and simple designs by using soothing
+                    & attractive color themes.<br>
+                    <div class="res">
+                    <a href="https://ridashaikh102.github.io/Resume/#obj" target="blank" class="resume">Resume</a>
+                </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SKILLS-->
+    <div class="skpage" id="skpage">
+        <div class="skbody">
+            <section class="sect">
+                <div class="sk-container">
+                    <div class="sk-cards">
+                        <div class="sk-content">
+                            <div class="sk-imBx"><img src="../portfolio/images/1695524296879.png" alt="Graphic">
+                            </div>
+                            <div class="contentbx">
+                                <h3>GRAPHIC DESIGNING <br>
+                                    <span>Ceative Designing In Adobe Photoshop</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1"><img src="../portfolio/images/pngwing.com(9).png" alt=""></li>
+                            <li style="--i:2" class="cen"><img src="../portfolio/images/pngwing.com(10).png" alt="" ></li>
+                            <li style="--i:3"><img src="../portfolio/images/images.png" alt="" style="width: 30px;"></li>
+                        </ul>
+                    </div>
+                    <!--card 2-->
+                    <div class="sk-cards">
+                        <div class="sk-content">
+                            <div class="sk-imBx"><img src="../portfolio/images/WDD.jpg" alt="Graphic"></div>
+                            <div class="contentbx">
+                                <h3>WEB DESIGNER <br><span>Ceative Front End Web Designer</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1"><i class="fab fa-html5"></i></li>
+                            <li style="--i:2" class="cen"><i class="fab fa-css3"></i></li>
+                            <li style="--i:3"><i class="fa-brands fa-php"></i></li>
+                        </ul>
+                    </div>
+                    <!--Card 3-->
+                    <div class="sk-cards">
+                        <div class="sk-content">
+                            <div class="sk-imBx"><img src="../portfolio/images/ms-365-800x426.jpg" alt="Graphic">
+                            </div>
+                            <div class="contentbx">
+                                <h3>MS OFFICE <br><span>Ceative PowerPoints & Word Documents</span></h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li style="--i:1"><i class="fas fa-file-word"></i></li>
+                            <li style="--i:2" ><i class="fas fa-file-powerpoint" class="cen"></i></li>
+                            <li style="--i:3"><i class="fas fa-file-excel"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="heads1">
+                    <h2 id="h2s" data-texts="SKILLS">SKILLS</h2>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!--PROJECTS-->
+    <div class="propage" id="propage">
+        <div class="probody">
+            <h2 class="prohead">PROJECTS</h2>
+            <div class="procontainer">
+                <div class="probox" data-color="clr1">
+                    <div class="proimbx"> <img src="../portfolio/images/icecream.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>Adobe Photoshop <br><span>YOGURT ICE CREAM</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/icecream.jpg" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="probox" data-color="clr5">
+                    <div class="proimbx"> <img src="../portfolio/images/donut.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>Adobe Photoshop <br><span>DONUT BAKERY</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/donut.jpg" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="probox" data-color="clr4">
+                    <div class="proimbx"> <img src="../portfolio/images/14th-august.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>Adobe Photoshop <br><span>14<sup>th</sup> AUGUST</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/14th-august.jpg" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="probox" data-color="clr6">
+                    <div class="proimbx"> <img src="../portfolio/images/0001.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>Adobe Photoshop <br><span>BRAND GUIDELINE</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/PAGE0.pdf" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="probox" data-color="clr2">
+                    <div class="proimbx"> <img src="../portfolio/images/fliers.jpg" alt="fl"></div>
+                    <div class="proglass">
+                        <h3>Adobe ILLUSTRATOR <br><span>FLIERS</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/fliers.jpg" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="probox" data-color="clr3">
+                    <div class="proimbx"> <img src="../portfolio/images/bird.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>Adobe ILLUSTRATOR <br><span>BIRD</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/bird.jpg" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="probox" data-color="clr7">
+                    <div class="proimbx"> <img src="../portfolio/images/padf.JPG" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>MS Word<br><span>FLYER</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/RIDA.pdf" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="probox" data-color="clr8">
+                    <div class="proimbx"> <img src="../portfolio/images/os.jpg" alt="IC"></div>
+                    <div class="proglass">
+                        <h3>MS Word<br><span>WORD DOCUMENT</span></h3>
+                        <ul>
+                            <li><a href="../portfolio/images/OS.pdf" target="_blank">Click Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Contact-->
+    <div class="conpage" id="conpage">
+        <h1 class="h1">CON<span class="span1">TACT I</span>NFO</h1>
+        <div class="conbody">
+            <div class="con-container">
+                <a href="ridashaikh.252003@gmail.com" target="_blank" style="text-decoration: none;"><div class="glass" style="--r:-15;" data-text="Facebook"><i class="fa-brands fa-facebook"></i>
+                    <div class="hiver"> R_S GRAPHICS & WEB</div>
+                </div></a>
+                <a href="https://www.linkedin.com/in/rida-shaikh-5b8156323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" > <div class="glass" style="--r:5;" data-text="Twitter"><i class="fa-brands fa-linkedin"></i>
+                    <div class="hiver"> Rida Shaikh</div>
+                </div></a>
+                <a href="https://www.instagram.com/r_sgraphics102?igsh=dHdmbXlodjNqcHZi" target="_blank"><div class="glass" style="--r:25;" data-text="Instagram"><i class="fa-brands fa-instagram"></i>
+                    <div class="hiver"> R_S GRAPHICS & WEB_102</div>
+                </div></a>
+                <a href="#loginpage" style="text-decoration: none;" target="_blank"> <div class="glass" id="con-card4" style="--r:-25;" data-text="G-Mail"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="hiver"> ridashaikh.252003@gmail.com</div>
+                </div></a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--LOGIN FORM-->
+    <div class="loginpage" id="loginpage">
+        <div class="loginbody">
+           <section class="loginsect">
+                <img src="../portfolio/images/bgh.png" alt="">
+                <div class="loginbox">
+                    <img src="../portfolio/images/bgh.png" class="npic">
+                    <div class="logincontain">
+                        <div class="loginform">
+                            <h2>Contact Us</h2>
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="e5aaac37-8b26-4919-8b90-2ed694a2fc1a">
+
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Your Name" name="name" required>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="email" placeholder="Your Email" name="email" required>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Message" name="Message" required>
+                                </div>
+                                <div class="inputbox">
+                                    <input type="submit" value="Send Message">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
